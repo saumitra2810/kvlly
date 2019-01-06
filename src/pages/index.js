@@ -41,8 +41,7 @@ const IndexPage = () => (
             ecommerce
           </a>
           {', '}
-          and I'm beginning to venture into speaking opportunities on the same
-          topics.
+          and I'm beginning to seek speaking opportunities on the same topics.
         </p>
         <p>
           <ul>
