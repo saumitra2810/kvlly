@@ -16,7 +16,8 @@ import {
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Kelly Vaughn -- Entrepeneur, Developer, Shopify Expert"
+      title="Kelly Vaughn | Entrepeneur, Developer, Shopify Expert"
+      image="<Image />"
       keywords={[`gatsby`, `application`, `react`]}
     />
     <div className="home-flex">

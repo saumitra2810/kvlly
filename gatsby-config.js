@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: ``,
-    description: `Kelly Vaughn is the founder of The Taproom Agency, a Shopify consultancy specializing in high-growth merchants. She is a self-taught frontend developer of over 15 years.`,
+    description: `Kelly Vaughn is a developer and the founder of The Taproom Agency, a Shopify consultancy specializing in high-growth merchants.`,
     author: `@kvlly`,
     image: '/images/photo.jpg',
     twitterUsername: '@kvlly',
+    siteUrl: 'https://www.kvlly.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
