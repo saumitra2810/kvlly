@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Kelly Vaughn`,
-    description: `Entrepeneur, Developer, & Shopify Expert`,
+    title: ``,
+    description: `Kelly Vaughn is the founder of The Taproom Agency, a Shopify consultancy specializing in high-growth merchants. She is a self-taught frontend developer of over 15 years.`,
     author: `@kvlly`,
     image: '/images/photo.jpg',
     twitterUsername: '@kvlly',
@@ -37,6 +37,12 @@ module.exports = {
           `Playfair Display\:300,300i,400`,
           `Montserrat\:300,400,400i,500`, // you can also specify font weights and styles
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './src/images/favicon.png',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
