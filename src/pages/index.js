@@ -22,10 +22,9 @@ const IndexPage = () => (
     <div className="home-flex">
       <div className="home-content">
         <p>
-          I'm a self-taught frontend developer with a human-centered educational
-          background, meaning I build everything with empathy front and center.
-          I spend my days helping merchants grow their stores online using
-          Shopify.
+          I'm a frontend developer with a human-centered educational background,
+          meaning I build everything with empathy front and center. I spend my
+          days helping merchants grow their stores online using Shopify.
         </p>
         <p>
           During the day (and night - let's be honest) I run{' '}
