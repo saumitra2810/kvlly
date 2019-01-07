@@ -18,7 +18,6 @@ const IndexPage = () => (
     <SEO
       title="Kelly Vaughn | Entrepeneur, Developer, Shopify Expert"
       image="<Image />"
-      keywords={[`gatsby`, `application`, `react`]}
     />
     <div className="home-flex">
       <div className="home-content">

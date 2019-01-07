@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Kelly Vaughn`,
+        short_name: `personal-site`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
