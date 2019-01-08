@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
@@ -11,10 +11,15 @@ import {
   FaDev,
   FaLinkedin,
   FaEnvelope,
+  FaCoffee,
 } from 'react-icons/fa'
 
 const IndexPage = () => (
   <Layout>
+    <div className="siteHeader">
+      <h1>I'm Kelly Vaughn &mdash;</h1>
+      <h2>Entrepreneur, Developer, & Shopify Expert</h2>
+    </div>
     <SEO title="Kelly Vaughn | Entrepeneur, Developer, Shopify Expert" />
     <div className="home-flex">
       <div className="home-content">
@@ -39,58 +44,60 @@ const IndexPage = () => (
           {', '}
           and I'm beginning to seek speaking opportunities on the same topics.
         </p>
-        <p>
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/kvlly"
-              >
-                <FaTwitter />
-              </a>
-            </li>
-            <li>
-              <a href="mailto:kelly@thetaproom.com">
-                <FaEnvelope />
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://instagram.com/taproomkelly"
-              >
-                <FaInstagram />
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://linkedin.com/in/kellyvaughn"
-              >
-                <FaLinkedin />
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://dev.to/kelly"
-              >
-                <FaDev />
-              </a>
-            </li>
-          </ul>
-        </p>
+        <ul className="social">
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/kvlly"
+            >
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:kelly@thetaproom.com">
+              <FaEnvelope />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://instagram.com/taproomkelly"
+            >
+              <FaInstagram />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://linkedin.com/in/kellyvaughn"
+            >
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://dev.to/kelly"
+            >
+              <FaDev />
+            </a>
+          </li>
+          <li>
+            <Link to="/buy-kelly-coffee">
+              <FaCoffee />
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="home-image">
         <Image />
       </div>
     </div>
     <div />
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
 

@@ -13,16 +13,6 @@ const Header = ({ siteTitle }) => (
         height: '0.8em',
       }}
     />
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1>I'm Kelly Vaughn &mdash;</h1>
-      <h2>Entrepreneur, Developer, & Shopify Expert</h2>
-    </div>
   </div>
 )
 
