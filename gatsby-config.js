@@ -3,7 +3,7 @@ module.exports = {
     title: ``,
     description: `Kelly Vaughn is a developer and the founder of The Taproom Agency, a Shopify consultancy specializing in high-growth merchants.`,
     author: `@kvlly`,
-    image: '/images/photo.jpg',
+    image: 'https://kvlly.com/images/photo.jpg',
     twitterUsername: '@kvlly',
     siteUrl: 'https://www.kvlly.com',
   },
