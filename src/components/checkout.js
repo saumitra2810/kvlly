@@ -19,7 +19,7 @@ const Checkout = class extends React.Component {
   // You can find your key in the Dashboard:
   // https://dashboard.stripe.com/account/apikeys
   componentDidMount() {
-    this.stripe = window.Stripe(process.env.STRIPE_API_KEY, {
+    this.stripe = window.Stripe(String(process.env.STRIPE_API_KEY), {
       betas: ['checkout_beta_4'],
     })
   }
