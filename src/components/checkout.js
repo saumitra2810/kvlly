@@ -12,6 +12,7 @@ const buttonStyles = {
   borderRadius: '6px',
   letterSpacing: '1.5px',
   marginBottom: '20px',
+  cursor: 'pointer',
 }
 
 const Checkout = class extends React.Component {
@@ -29,8 +30,8 @@ const Checkout = class extends React.Component {
     event.preventDefault()
     const { error } = await this.stripe.redirectToCheckout({
       items: [{ sku: 'sku_EIoH9pfW2fkddM', quantity: 1 }],
-      successUrl: `http://localhost:8000/thanks/`,
-      cancelUrl: `http://localhost:8000/`,
+      successUrl: `https://kvlly.com/thanks/`,
+      cancelUrl: `https://kvlly.com/buy-kelly-coffee`,
     })
 
     if (error) {
