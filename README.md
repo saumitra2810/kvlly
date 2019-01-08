@@ -1,6 +1,6 @@
 ## Hello!
 
-This is my first project with Gatsby, and is probably super basic (jk it's absolutely basic). I'm fully open to recommendations on how to make all of this better, or if you have ideas of fun things I can try out on here, I'd love to hear it!
+This is my first project with Gatsby, and is probably super basic (jk it's absolutely basic). I'm fully open to recommendations on how to make all of this better, so if you have ideas of fun things I can try out on here or ways I can improve my code, I'd love to hear what you think! [Shoot me an email](mailto:kelly@thetaproom.com) with your thoughts.
 
 ## Lesson Log
 
