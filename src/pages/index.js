@@ -15,10 +15,7 @@ import {
 
 const IndexPage = () => (
   <Layout>
-    <SEO
-      title="Kelly Vaughn | Entrepeneur, Developer, Shopify Expert"
-      image="<Image />"
-    />
+    <SEO title="Kelly Vaughn | Entrepeneur, Developer, Shopify Expert" />
     <div className="home-flex">
       <div className="home-content">
         <p>

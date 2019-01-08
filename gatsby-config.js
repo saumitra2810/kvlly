@@ -3,7 +3,7 @@ module.exports = {
     title: ``,
     description: `Kelly Vaughn is a developer and the founder of The Taproom Agency, a Shopify consultancy specializing in high-growth merchants.`,
     author: `@kvlly`,
-    image: '/images/photo.jpg',
+    image: 'https://kvlly.com/images/photo.jpg',
     twitterUsername: '@kvlly',
     siteUrl: 'https://www.kvlly.com',
   },
@@ -22,6 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        url: `https://kvlly.com`,
         name: `Kelly Vaughn`,
         short_name: `personal-site`,
         start_url: `/`,
@@ -29,6 +30,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        image: `src/images/photo.jpg`,
       },
     },
     {

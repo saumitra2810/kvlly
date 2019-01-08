@@ -52,7 +52,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
               },
               {
                 name: `twitter:image`,
-                content: image,
+                content: data.site.siteMetadata.image,
               },
             ]
               .concat(
