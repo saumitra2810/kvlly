@@ -8,7 +8,10 @@ import Checkout from '../components/checkout'
 
 const BuyKellyCoffee = props => (
   <Layout>
-    <SEO title="Buy Kelly Coffee" />
+    <SEO
+      title="Buy Kelly Coffee"
+      image="https://kvlly.com/images/coffee-kelly.jpg"
+    />
     <div className="siteHeader">
       <h1>Buy Kelly Coffee &mdash;</h1>
       <h2>I'm really just testing the Stripe ecommerce plugin</h2>
