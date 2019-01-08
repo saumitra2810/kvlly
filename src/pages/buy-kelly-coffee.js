@@ -24,6 +24,10 @@ const BuyKellyCoffee = props => (
             I get to create a test page on my personal site entirely dedicated
             to coffee
           </li>
+          <li>
+            I probably need another cup of coffee because I forgot about the cup
+            of coffee right in front of me and now it's cold
+          </li>
         </ul>
         <Checkout />
         <p>
