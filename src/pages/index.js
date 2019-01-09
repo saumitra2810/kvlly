@@ -12,6 +12,7 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaCoffee,
+  FaBeer,
 } from 'react-icons/fa'
 
 const IndexPage = () => (
@@ -55,11 +56,6 @@ const IndexPage = () => (
             </a>
           </li>
           <li>
-            <a href="mailto:kelly@thetaproom.com">
-              <FaEnvelope />
-            </a>
-          </li>
-          <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -75,6 +71,16 @@ const IndexPage = () => (
               href="https://linkedin.com/in/kellyvaughn"
             >
               <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:kelly@thetaproom.com">
+              <FaEnvelope />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener" href="https://thetaproom.com">
+              <FaBeer />
             </a>
           </li>
           <li>
