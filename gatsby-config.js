@@ -34,6 +34,16 @@ module.exports = {
         image: `src/images/photo.jpg`,
       },
     },
+    // In your gatsby-config.js
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-132105470-1',
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'kvlly.com',
+      },
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

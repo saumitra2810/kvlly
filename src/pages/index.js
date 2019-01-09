@@ -79,17 +79,17 @@ const IndexPage = () => (
             </a>
           </li>
           <li>
-            <a target="_blank" rel="noopener" href="https://thetaproom.com">
-              <FaBeer />
-            </a>
-          </li>
-          <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://dev.to/kelly"
             >
               <FaDev />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener" href="https://thetaproom.com">
+              <FaBeer />
             </a>
           </li>
           <li>
