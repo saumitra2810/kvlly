@@ -39,9 +39,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-132105470-1',
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: 'kvlly.com',
       },
     },
     {
