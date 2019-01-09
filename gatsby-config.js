@@ -34,7 +34,6 @@ module.exports = {
         image: `src/images/photo.jpg`,
       },
     },
-    // In your gatsby-config.js
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
