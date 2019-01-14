@@ -11,7 +11,10 @@ import '../components/blog.scss'
 export default function Template({ data }) {
   const post = data.markdownRemark
   return (
-    <BlogLayout>
+    <BlogLayout
+      featuredImage={post.frontmatter.featuredImage.childImageSharp.sizes}
+      description={post.frontmatter.description}
+    >
       <div className="blog-image-container">
         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
       </div>
