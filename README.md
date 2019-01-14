@@ -15,3 +15,7 @@ I don't know why this was so difficult, but it took me longer than I would like 
 ### 3: I like coffee
 
 I was curious to see how the ecommerce integration with Stripe worked, so I built an additional page to let people buy me coffee. Not because I expect people to buy me coffee, of course. But I'm really good at talking about coffee. Some number of hours of work later, [here we are](https://kvlly.com/buy-kelly-coffee).
+
+### 4: Now I can blog! Wait... now I have to blog
+
+I figure if I'm going to talk about blogging, I should probably add it to my site as well. I don't have comments on there yet and the layout is super basic, but it technically works so I'm not upset. I only have [one blog post](https://kvlly.com/blog/learning-to-code-a-haiku) for you to enjoy at the moment. It took me a really long time to write. (No it didn't.)
