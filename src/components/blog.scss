@@ -15,3 +15,21 @@
     margin-bottom: 30px;
   }
 }
+
+.blog-image-container {
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blog-post-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.blog-post {
+  p {
+    line-height: 1.6;
+  }
+}

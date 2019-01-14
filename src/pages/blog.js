@@ -26,7 +26,7 @@ export default function Blog({ data }) {
                   </Link>
                 </h2>
                 <h3>{post.frontmatter.date}</h3>
-                <p>{post.excerpt}</p>
+                <p>{post.frontmatter.description}</p>
               </div>
             )
           })}
@@ -46,6 +46,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            description
           }
         }
       }
