@@ -97,6 +97,18 @@ ul.disc {
 	}
 }
 
+.footer {
+	margin-top: 140px;
+	.social li {
+		display: inline-block;
+		margin-left: 12px;
+		margin-top: 4px;
+		a {
+			color: #ffffff;
+		}
+	}
+}
+
 .siteHeader {
 	max-width: 960px;
 	margin: 30px auto;

@@ -30,6 +30,16 @@
 
 .blog-post {
   p {
-    line-height: 1.6;
+    line-height: 1.67;
+    margin-bottom: 30px;
+  }
+  ol {
+    list-style: initial;
+    margin: 0 0 0 30px;
+    padding: 0;
+    li {
+      margin-bottom: 24px;
+      line-height: 1.67;
+    }
   }
 }

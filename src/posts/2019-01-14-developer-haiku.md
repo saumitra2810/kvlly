@@ -1,13 +1,16 @@
 ---
-path: '/blog/learning-to-code-a-haiku'
+path: '/blog/how-to-have-a-productive-workday'
 date: '2019-01-14'
-title: 'Learning to Code: A Haiku'
-featuredImage: '../../static/images/learning-to-code-a-haiku.jpg'
-description: 'The most relatable haiku in the world.'
+title: 'How I learned to be more productive with my workdays'
+featuredImage: '../images/productive-workday.jpg'
+description: 'Hint: They all involve eliminating as many distractions as possible'
 ---
 
-Is this thing working?
+I'm the queen of distractions. If I see an email notification come through, I have to stop what I'm doing and check it. My phone lights up with a text? Ooh, someone wants to talk to me! (Nope, just AT&T letting me know my autopay has successfully processed.) I spent a lot of 2018 trying to figure out what I can do to make my workdays more productive. It's still very much a work in progress, but I found six primary behavior changes that helped me be more productive when I'm on the clock.
 
-Nope, I clearly broke something
-
-This may take a while
+1. **I turned off push notifications.** About six months ago, I turned off all push notifications for social media. The result was an immediate increase in focus on my work. I used to pick up my phone every time it would light up, and inevitably I'd get distracted and begin scrolling through Facebook or Twitter. Next thing I know, a half hour has gone by. I strongly recommend trialing disabling push notifications for a short period of time and see if it makes a difference in your productivity.
+2. **All of my emails flow through [SaneBox](https://sanebox.com/t/kafrkgkcwf) first.** SaneBox is an incredibly useful tool that automatically filters your email so you're only getting notified about the important things that need to be addressed. You can train your email as well so the system gets smarter over time. On a busy week, I now only get notifications for about 75% of my emails, and just get a digest at the end of the day to let me know I have other emails to check. Plans start as low as \$7/mo.
+3. **I don't take meetings on Fridays anymore.** That's my "me" day. I'm on Slack and I'm still checking my email, but meetings either need to happen before Friday or will have to wait until the next week. This gives me a full 8 hours of (mostly) uninterrupted time to get work done.
+4. **I take breaks when I need them.** Everyone needs a brain break. Developers especially need a brain break. We tend to get so caught up in attempting to solve an issue that we try and try and try until something hopefully works. 90% of time if I come back to a problem with a fresh mind after taking a 15-minute break, I can develop a solution or at least make progress towards one.
+5. **I'm learning that nothing is really that urgent.** If it's not written down, it's not getting done. You know how it goes: you start your workday expecting to get A, B, and C done, but throughout the day G, H, I, and J present themselves, and by the time you get to the end of your workday you have barely even started on A. I'm getting better at accepting that not everything is urgent. If it's not on fire, it can probably wait until tomorrow.
+6. **I don't answer unscheduled phone calls.** I know this doesn't work for everyone, and I know others are not going to agree with me here. But I have strong feelings towards phone calls in that if you don't shoot me an email or message on Slack to ask if we can have a quick phone call and instead call me outright, you value your time over my own. I'm probably busy doing something (hopefully) important, and picking up the phone will not only distract me from whatever it is I was working on but also throw me off my game after the call ends, and I'll need to regroup and figure out where I left off. Be kind and schedule calls.
