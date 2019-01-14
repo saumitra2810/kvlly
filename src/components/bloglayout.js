@@ -1,5 +1,4 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
@@ -21,11 +20,6 @@ const BlogLayout = ({ featuredImage, description, children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Helmet title={data.site.siteMetadata.title}>
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:image" content={`${featuredImage}`} />
-          <meta name="twitter:description" content={`${description}`} />
-        </Helmet>
         <div>
           {children}
           {/* <footer>

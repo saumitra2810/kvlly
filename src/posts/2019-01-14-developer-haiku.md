@@ -2,7 +2,7 @@
 path: '/blog/learning-to-code-a-haiku'
 date: '2019-01-14'
 title: 'Learning to Code: A Haiku'
-featuredImage: '../images/new-developers-haiku.jpg'
+featuredImage: '../images/learning-to-code-a-haiku.jpg'
 description: 'The most relatable haiku in the world.'
 ---
 

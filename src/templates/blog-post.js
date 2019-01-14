@@ -10,6 +10,8 @@ import '../components/blog.scss'
 
 export default function Template({ data }) {
   const post = data.markdownRemark
+  const imagePath = `https://kvlly.com/static/`
+  const blogPath = post.frontmatter.path.split('/').pop()
   return (
     <BlogLayout
       featuredImage={post.frontmatter.featuredImage.childImageSharp.sizes}
@@ -18,7 +20,12 @@ export default function Template({ data }) {
       <div className="blog-image-container">
         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
       </div>
-      <SEO title={`Kelly Vaughn &mdash; ${post.frontmatter.title}`} />
+      <SEO
+        title={`${post.frontmatter.title}`}
+        description={post.frontmatter.description}
+        image={`${imagePath}${blogPath}.jpg`}
+        card={`summary_large_image`}
+      />
       <div className="blog-post-container">
         <Helmet title={`${post.frontmatter.title}`} />
         <div className="siteHeader">
