@@ -3,7 +3,7 @@ path: '/blog/how-to-have-a-productive-workday'
 date: '2019-01-14'
 title: 'How I learned to be more productive with my workdays'
 featuredImage: '../images/productive-workday.jpg'
-description: 'Hint: They all involve eliminating as many distractions as possible'
+description: 'Hint: All of my tips involve eliminating as many distractions as possible'
 ---
 
 I'm the queen of distractions. If I see an email notification come through, I have to stop what I'm doing and check it. My phone lights up with a text? Ooh, someone wants to talk to me! (Nope, just AT&T letting me know my autopay has successfully processed.) I spent a lot of 2018 trying to figure out what I can do to make my workdays more productive. It's still very much a work in progress, but I found six primary behavior changes that helped me be more productive when I'm on the clock.
