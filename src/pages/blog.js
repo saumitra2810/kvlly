@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import '../components/blog.scss'
+
 export default function Blog({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (

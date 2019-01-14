@@ -1,0 +1,17 @@
+.blog-posts {
+  h2 a {
+   text-decoration: none;
+  }
+  h3 {
+    margin: 12px 0;
+    // letter-spacing: 0.05em;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+  }
+  .blog-post-preview:not(:last-of-type) {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}

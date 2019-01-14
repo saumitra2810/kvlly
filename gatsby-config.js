@@ -54,7 +54,7 @@ module.exports = {
       options: {
         fonts: [
           `Playfair Display\:300,300i,400`,
-          `Montserrat\:300,400,400i,500`, // you can also specify font weights and styles
+          `Noto Sans SC\:300,400,400i,500`, // you can also specify font weights and styles
         ],
       },
     },
