@@ -52,13 +52,7 @@ export const postQuery = graphql`
         path
         title
         description
-        featuredImage {
-          childImageSharp {
-            sizes(maxWidth: 1440) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
+        featuredImage
       }
     }
   }
