@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
 import BlogLayout from '../components/bloglayout'
 import SEO from '../components/seo'
@@ -13,12 +12,9 @@ export default function Template({ data }) {
   const imagePath = `https://kvlly.com/images/`
   const blogPath = post.frontmatter.path.split('/').pop()
   return (
-    <BlogLayout
-      featuredImage={post.frontmatter.featuredImage.childImageSharp.sizes}
-      description={post.frontmatter.description}
-    >
+    <BlogLayout>
       <div className="blog-image-container">
-        <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
+        <img src={`${imagePath}${blogPath}.jpg`} />
       </div>
       <SEO
         title={`${post.frontmatter.title}`}
@@ -44,7 +40,7 @@ export default function Template({ data }) {
 }
 
 export const postQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query BlogPostByPath($path: String) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
