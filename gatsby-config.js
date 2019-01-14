@@ -16,10 +16,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-stripe`,
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-stripe`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -45,7 +54,7 @@ module.exports = {
       options: {
         fonts: [
           `Playfair Display\:300,300i,400`,
-          `Montserrat\:300,400,400i,500`, // you can also specify font weights and styles
+          `Noto Sans SC\:300,400,400i,500`, // you can also specify font weights and styles
         ],
       },
     },

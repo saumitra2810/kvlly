@@ -10,9 +10,21 @@ const Header = ({ siteTitle }) => (
         background:
           '-webkit-linear-gradient(to right, #F27121, #E94057, #8A2387)', // eslint-disable-next-line
         background: 'linear-gradient(to right, #F27121, #E94057, #8A2387)',
-        height: '0.8em',
+        padding: '0.5em 30px',
       }}
-    />
+    >
+      <div
+        className="header-links"
+        style={{
+          maxWidth: '960px',
+          textAlign: 'right',
+          margin: '0 auto',
+        }}
+      >
+        <Link to="/">Home</Link>
+        <Link to="/blog">Blog</Link>
+      </div>
+    </div>
   </div>
 )
 
