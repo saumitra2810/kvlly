@@ -25,9 +25,8 @@ const IndexPage = () => (
     <div className="home-flex">
       <div className="home-content">
         <p>
-          I'm a frontend developer with a human-centered educational background,
-          meaning I build everything with empathy front and center. I spend my
-          days helping merchants grow their stores online using Shopify.
+          I'm a frontend developer and run a marketing agency specializing in
+          Shopify.
         </p>
         <p>
           During the day (and night - let's be honest) I run{' '}
@@ -43,7 +42,7 @@ const IndexPage = () => (
             ecommerce
           </a>
           {', '}
-          and I'm beginning to seek speaking opportunities on the same topics.
+          and I also <Link to="/speaking">speak</Link> on these same topics.
         </p>
         <ul className="social">
           <li>

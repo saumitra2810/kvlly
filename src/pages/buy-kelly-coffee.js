@@ -33,9 +33,6 @@ const BuyKellyCoffee = props => (
           </li>
         </ul>
         <Checkout />
-        <p>
-          <Link to="/">Go back to the homepage</Link>
-        </p>
       </div>
       <div className="inner-image">
         <Img fluid={props.data.coffeeKelly.childImageSharp.fluid} />
