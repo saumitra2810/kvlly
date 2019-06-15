@@ -18,4 +18,8 @@ I was curious to see how the ecommerce integration with Stripe worked, so I buil
 
 ### 4: Now I can blog! Wait... now I have to blog
 
-I figure if I'm going to talk about blogging, I should probably add it to my site as well. I don't have comments on there yet and the layout is super basic, but it technically works so I'm not upset. I only have [one blog post](https://kvlly.com/blog/learning-to-code-a-haiku) for you to enjoy at the moment. It took me a really long time to write. (No it didn't.)
+I figure if I'm going to talk about blogging, I should probably add it to my site as well. I don't have comments on there yet and the layout is super basic, but it technically works so I'm not upset. I only have one blog post for you to enjoy at the moment. It took me a really long time to write. (No it didn't.)
+
+### 5: Turns out I'm not blogging. But I am speaking!
+
+I added a new page for speaking engagements and removed the blog. I never got past the first blog post. Maybe 2020 will be the year I blog.
