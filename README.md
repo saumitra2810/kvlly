@@ -23,3 +23,7 @@ I figure if I'm going to talk about blogging, I should probably add it to my sit
 ### 5: Turns out I'm not blogging. But I am speaking!
 
 I added a new page for speaking engagements and removed the blog. I never got past the first blog post. Maybe 2020 will be the year I blog.
+
+### 6: What am I up to right now?
+
+I love the idea of keeping a "Now" page up to date based on what I'm currently doing + interested in. It's fun! [Learn more here](https://nownownow.com/about). The page is live on my site [now](https://kvlly.com/now). (ha ha get it?)
