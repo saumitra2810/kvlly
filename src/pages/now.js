@@ -9,7 +9,7 @@ const Now = props => (
   <Layout>
     <SEO
       title="What I'm Doing Now"
-      image="https://kvlly.com/images/speaking.jpg"
+      image="https://kvlly.com/images/nowkelly.jpg"
     />
     <div className="siteHeader">
       <h1>What I'm Doing Now &mdash;</h1>
