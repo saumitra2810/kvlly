@@ -106,6 +106,21 @@ ul.disc {
 	}
 }
 
+.summary {
+	font-weight: 300;
+	line-height: 1.6;
+	.now li {
+		margin-bottom: 0.5em;
+	}
+	ul.disc a {
+		text-decoration: underline;
+	}
+}
+
+.nownownow {
+	font-size: 0.75em;
+}
+
 .header-links {
 	a {
 		color: #ffffff;
