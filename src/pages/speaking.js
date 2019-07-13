@@ -31,17 +31,6 @@ const Speaking = props => (
             / Santa Monica, CA
           </li>
           <li>
-            <b>September 2019:</b>{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://lead.taskhusky.com/"
-            >
-              Lead the Pack
-            </a>{' '}
-            / Virtual
-          </li>
-          <li>
             <b>October 2019:</b>{' '}
             <a
               target="_blank"
