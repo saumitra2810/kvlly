@@ -25,6 +25,7 @@ const Header = ({ siteTitle }) => (
         <Link to="/now">Now</Link>
         <Link to="/speaking">Speaking</Link>
         <Link to="/buy-kelly-coffee">Coffee</Link>
+        <a href="https://shop.kvlly.com">Shop</a>
       </div>
     </div>
   </div>
