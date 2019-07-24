@@ -30,15 +30,27 @@ const IndexPage = () => (
         </p>
         <p>
           During the day (and night - let's be honest) I run{' '}
-          <a target="_blank" href="https://thetaproom.com">
+          <a
+            target="_blank"
+            href="https://thetaproom.com"
+            rel="noopener noreferrer"
+          >
             The Taproom Agency
           </a>
           {'. '}I also write about{' '}
-          <a href="https://dev.to/kelly" target="_blank">
+          <a
+            href="https://dev.to/kelly"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             entrepreneurship
           </a>
           {' and '}
-          <a target="_blank" href="https://mailchi.mp/f71b4a1fbd00/thetaproom">
+          <a
+            target="_blank"
+            href="https://mailchi.mp/f71b4a1fbd00/thetaproom"
+            rel="noopener noreferrer"
+          >
             ecommerce
           </a>
           {', '}
@@ -87,7 +99,11 @@ const IndexPage = () => (
             </a>
           </li>
           <li>
-            <a target="_blank" rel="noopener" href="https://thetaproom.com">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://thetaproom.com"
+            >
               <FaBeer />
             </a>
           </li>

@@ -1,0 +1,224 @@
+.products-holder {
+  display: flex;
+  flex-wrap: Wrap;
+  .product {
+    width: calc(25% - 24px);
+    &:not(:nth-child(4n)){
+      margin-right: 32px;
+    }
+    margin-bottom: 40px;
+    img {
+      max-width: 100%;
+    }
+    a {
+      text-decoration: none;
+    }
+    h3 {
+      font-size: 1.3em;
+    }
+  }
+}
+
+.product-listing {
+  h1 {
+    line-height: 1.4;
+    font-size: 2.4rem;
+    margin: 0 0 6px;
+  }
+  h2 {
+    margin: 0 0 12px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .productForm {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 24px 0;
+    margin-bottom: 30px;
+  }
+  label {
+    width: 100%;
+    font-weight: 600;
+  }
+  input, select {
+    width: 100%;
+  }
+  button {
+    -webkit-appearance: none;
+    border: none;
+    background-color: #202020;
+    padding: 8px 30px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 0 20px;
+  }
+  .dropdown {
+    position: relative;
+    display:block;
+    margin-top:0.5em;
+    overflow:hidden;
+    width:100%;
+    max-width:100%;
+  }
+
+  select {
+    width:100%;
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    text-overflow: "";
+    font-size:16px;
+    font-weight: bold;
+    background:none;
+    border: none;
+    color: #444;
+    outline: none;
+    padding: .4em 19% .4em .8em;
+    line-height:1.2;
+    border: 1px solid #333333;
+    border-radius: 0;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  .dropdown:after {
+    background: none;
+    color: #bbb;
+    content: "\25BC";
+    font-size: .7em;
+    padding:0;
+    position: absolute;
+    right: 1em;
+    top: .8em;
+    bottom: .3em;
+    z-index: 1;
+    pointer-events:none;
+  }
+
+  select:focus {
+    outline: none;
+    border: 1px solid purple;
+  }
+
+  /* This hides focus around selected option in FF */
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
+  input[type="number"]{
+    padding: .4em .8em;
+    border: 1px solid #333333;
+    max-width: 80px;
+    font-size: 16px;
+    display: block;
+    margin-top: 8px;
+    color: #444;
+    font-weight: 600;
+    &:focus {
+      outline: none;
+      border: 1px solid purple;
+    }
+  }
+}
+
+.cart {
+  text-align: center;
+  width: 100%;
+  margin: 30px auto;
+  .item-listing {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #bababa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  .cart-heading {
+    display: flex;
+    text-align: left;
+    background-color: #eaeaea;
+    padding: 4px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  .item-content {
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+    }
+    .vImage {
+      width: 80px;
+      margin-right: 12px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .vContent {
+      width: 100%;
+    }
+  }
+  input[type="number"]{
+    padding: .4em .8em;
+    border: 1px solid #333333;
+    max-width: 80px;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    color: #444;
+    text-align: center;
+    text-indent: 8px;
+    &:focus {
+      outline: none;
+      border: 1px solid purple;
+    }
+  }
+  .remove {
+    -webkit-appearance: none;
+    border: 1px solid #303030;
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+      color: purple;
+      border: 1px solid purple;
+    }
+  }
+  .cart-heading, .item-listing {
+    > div:first-of-type {
+      width: 40%;
+    }
+    > div:nth-child(2), > div:nth-child(3), > div:nth-child(4){
+      width: calc(20% - 10px);
+      text-align: center;
+    }
+    > div:last-of-type {
+      width: 30px;
+    }
+  }
+  .checkout {
+    margin-top: 30px;
+    button {
+      -webkit-appearance: none;
+      border: none;
+      background-color: #202020;
+      padding: 8px 30px;
+      color: #ffffff;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 20px;
+      &:hover {
+        background-color: purple;
+      }
+    }
+  }
+}

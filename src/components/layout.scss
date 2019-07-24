@@ -42,10 +42,16 @@ table {
 	border-spacing: 0;
 }
 
+input, button, textarea {
+	font-family: 'Noto Sans SC', sans-serif;
+}
+
 body {
 	font-family: 'Noto Sans SC', sans-serif;
 	line-height: 1.4;
 	color: #6a6a6a;
+	box-sizing: border-box;
+	padding-bottom: 60px;
 }
 
 a {
@@ -134,7 +140,11 @@ ul.disc {
 }
 
 .footer {
-	margin-top: 140px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
 	.social li {
 		display: inline-block;
 		margin-left: 12px;
@@ -148,6 +158,9 @@ ul.disc {
 .siteHeader {
 	max-width: 960px;
 	margin: 30px auto;
+	p {
+		margin-top: 12px;
+	}
 }
 
 .home-flex, .inner-flex {

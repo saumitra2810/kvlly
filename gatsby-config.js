@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: ``,
@@ -62,6 +66,19 @@ module.exports = {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: './src/images/favicon.png',
+      },
+    },
+    {
+      resolve: 'gatsby-source-shopify',
+      options: {
+        shopName: process.env.SHOPIFY_STORE_NAME,
+        accessToken: process.env.SHOPIFY_SECRET,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        whitelist: ['SHOPIFY_STORE_NAME', 'SHOPIFY_SECRET'],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

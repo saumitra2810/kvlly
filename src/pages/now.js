@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -42,6 +42,7 @@ const Now = props => (
             Plus Solutions Partner, making{' '}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/feed/update/urn:li:activity:6554512789229101056"
             >
               dreams come true
@@ -52,6 +53,7 @@ const Now = props => (
             <b>Listening to: </b>{' '}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.youtube.com/watch?v=n2EjeMx4bSg"
             >
               I Prevail
@@ -65,7 +67,7 @@ const Now = props => (
           </li>
           <li>
             <b>Working on: </b>
-            <ul class="disc">
+            <ul className="disc">
               <li>
                 Providing advisory services to Shopify Plus merchants through my
                 agency,{' '}
@@ -95,7 +97,7 @@ const Now = props => (
             </ul>
           </li>
         </ul>
-        <p class="nownownow">
+        <p className="nownownow">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -108,6 +110,7 @@ const Now = props => (
       <div className="inner-image">
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://twitter.com/kvlly/status/1140740694354649089"
         >
           <Img fluid={props.data.speakingKelly.childImageSharp.fluid} />

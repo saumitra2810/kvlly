@@ -73,7 +73,11 @@ const Footer = () => (
             </a>
           </li>
           <li>
-            <a target="_blank" rel="noopener" href="https://thetaproom.com">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://thetaproom.com"
+            >
               <FaBeer />
             </a>
           </li>
