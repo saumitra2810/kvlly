@@ -1,12 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Img from 'gatsby-image'
 
 const Speaking = props => (
-  <Layout>
+  <>
     <SEO
       title="Speaking Engagements"
       image="https://kvlly.com/images/speaking.jpg"
@@ -89,7 +88,7 @@ const Speaking = props => (
         <Img fluid={props.data.speakingKelly.childImageSharp.fluid} />
       </div>
     </div>
-  </Layout>
+  </>
 )
 
 export default Speaking

@@ -14,11 +14,20 @@ const LineItem = props => {
     />
   ) : null
 
+  const variantPrice =
+    line_item.variant.price.indexOf('.00') > 0
+      ? line_item.variant.price.split('.00')
+      : line_item.variant.price
+
   const selectedOptions = line_item.variant.selectedOptions ? (
     <>
       {line_item.variant.selectedOptions.map((option, i) => {
         if (option.value !== 'Default Title') {
-          return <div key={i}>{`${option.name}: ${option.value}`}</div>
+          return (
+            <div className="option" key={i}>{`${option.name}: ${
+              option.value
+            }`}</div>
+          )
         } else {
           return null
         }
@@ -45,8 +54,12 @@ const LineItem = props => {
         <div className="vImage">{variantImage}</div>
         <div className="vContent">
           <div>
-            <a href={`/shop/${line_item.variant.product.handle}`}>
+            <a
+              className="product-title"
+              href={`/shop/${line_item.variant.product.handle}`}
+            >
               {line_item.title}
+              <span className="mobile-price"> &ndash; ${variantPrice}</span>
             </a>
             {`  `}
             {line_item.variant.title === !'Default Title'
@@ -57,12 +70,7 @@ const LineItem = props => {
           </div>
         </div>
       </div>
-      <div>
-        $
-        {line_item.variant.price.indexOf('.00') > 0
-          ? line_item.variant.price.split('.00')
-          : line_item.variant.price}
-      </div>
+      <div>${variantPrice}</div>
       <div>
         <input
           type="number"
@@ -72,7 +80,11 @@ const LineItem = props => {
       </div>
       <div>
         $
-        {(line_item.variant.price * line_item.quantity).toFixed(2).split('.00')}
+        {
+          (line_item.variant.price * line_item.quantity)
+            .toFixed(2)
+            .split('.00')[0]
+        }
       </div>
       <div>
         <button className="remove" onClick={handleRemove}>

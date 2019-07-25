@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import '../components/shop.scss'
 
 const Shop = props => (
-  <Layout>
+  <>
     <SEO
       title="Shop | Kelly Vaughn"
       image="https://kvlly.com/images/donut-time.jpg"
@@ -24,21 +23,31 @@ const Shop = props => (
     <div className="products-holder">
       {props.data.allShopifyProduct.edges.map((p, i) => {
         let product = p.node
-        var multipleVariants = product.variants.length > 1 ? 'From ' : null
         return (
           <div className="product" key={i}>
             <Link to={`/shop/${product.handle}`}>
               <img alt={product.title} src={product.images[0].originalSrc} />
               <h3>{product.title}</h3>
               <span>
-                {multipleVariants}${product.variants[0].price}
+                $
+                {parseFloat(product.priceRange.minVariantPrice.amount)
+                  .toFixed(2)
+                  .split('.00')}
+                {product.priceRange.maxVariantPrice.amount >
+                product.priceRange.minVariantPrice.amount
+                  ? ` - $${
+                      parseFloat(product.priceRange.maxVariantPrice.amount)
+                        .toFixed(2)
+                        .split('.00')[0]
+                    }`
+                  : null}
               </span>
             </Link>
           </div>
         )
       })}
     </div>
-  </Layout>
+  </>
 )
 
 export default Shop
@@ -53,6 +62,14 @@ export const pageQuery = graphql`
           handle
           productType
           vendor
+          priceRange {
+            minVariantPrice {
+              amount
+            }
+            maxVariantPrice {
+              amount
+            }
+          }
           variants {
             id
             title

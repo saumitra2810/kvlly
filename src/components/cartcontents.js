@@ -16,21 +16,32 @@ const CartContents = () => {
   })
 
   return (
-    <div className="cart-contents" data-line-items={line_items.length}>
-      <div className="hasLineItems">
-        <div className="cart-heading">
-          <div>Item</div>
-          <div>Price</div>
-          <div>Quantity</div>
-          <div>Total</div>
-          <div />
+    <div>
+      {line_items.length === 0 ? (
+        <div>
+          Your cart is empty! <a href="/shop">Go shopping.</a>
         </div>
-        <div className="line-items">{line_items}</div>
-        <div className="checkout">
-          <h3>Subtotal: ${checkout.subtotalPrice}</h3>
-          <button onClick={handleCheckout}>Check out</button>
+      ) : (
+        <div className="cart-contents">
+          <div className="hasLineItems">
+            <div className="cart-heading">
+              <div>Item</div>
+              <div>Price</div>
+              <div>Quantity</div>
+              <div>Total</div>
+              <div />
+            </div>
+            <div className="line-items">{line_items}</div>
+            <div className="checkout">
+              <h3>Subtotal: ${checkout.subtotalPrice}</h3>
+              <button onClick={handleCheckout}>Check out</button>
+              <div className="continue-shopping">
+                <a href="/shop">Continue Shopping</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   )
 }

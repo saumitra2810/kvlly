@@ -1,18 +1,19 @@
 import React from 'react'
 
-import Layout from '../components/layout'
+import CartContents from '../components/cartcontents'
 import SEO from '../components/seo'
-import Cart from '../components/cart'
 
 const CartPage = props => (
-  <Layout>
+  <>
     <SEO
       title="Cart | Kelly Vaughn"
       image="https://kvlly.com/images/coffee-kelly.jpg"
     />
     <h1>Cart &mdash;</h1>
-    <Cart />
-  </Layout>
+    <div className="cart">
+      <CartContents />
+    </div>
+  </>
 )
 
 export default CartPage

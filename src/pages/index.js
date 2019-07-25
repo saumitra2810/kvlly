@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
 
@@ -16,7 +15,7 @@ import {
 } from 'react-icons/fa'
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <div className="siteHeader">
       <h1>I'm Kelly Vaughn &mdash;</h1>
       <h2>Entrepreneur, Developer, & Shopify Expert</h2>
@@ -119,7 +118,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div />
-  </Layout>
+  </>
 )
 
 export default IndexPage

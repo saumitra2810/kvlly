@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Img from 'gatsby-image'
 
 const BuyKellyCoffee = props => (
-  <Layout>
+  <>
     <SEO title="Buy Kelly Coffee" />
     <div className="siteHeader">
       <h1>Thanks &mdash;</h1>
@@ -22,7 +21,7 @@ const BuyKellyCoffee = props => (
         <Img fluid={props.data.coffeeKelly.childImageSharp.fluid} />
       </div>
     </div>
-  </Layout>
+  </>
 )
 
 export default BuyKellyCoffee

@@ -27,6 +27,12 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout.js`),
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-stripe`,

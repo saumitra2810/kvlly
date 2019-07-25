@@ -1,12 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Img from 'gatsby-image'
 
 const Now = props => (
-  <Layout>
+  <>
     <SEO
       title="What I'm Doing Now | Kelly Vaughn"
       image="https://kvlly.com/images/nowkelly.jpg"
@@ -117,7 +116,7 @@ const Now = props => (
         </a>
       </div>
     </div>
-  </Layout>
+  </>
 )
 
 export default Now
