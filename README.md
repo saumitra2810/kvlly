@@ -30,4 +30,4 @@ I love the idea of keeping a "Now" page up to date based on what I'm currently d
 
 ### 7: What is headless commerce?
 
-This one will be in progress for a while! I created a Shopify store to learn how to use Shopify's [Storefront API](https://help.shopify.com/en/api/storefront-api) in a headless fashion. The result is a fully usable online store directly built into Gatsby. [Take a peek!](https://kvlly.com/shop/)
+This one will be in progress for a while! I created a Shopify store to learn how to use Shopify's [Storefront API](https://help.shopify.com/en/api/storefront-api) in a headless fashion. The result is a fully functional online store directly built into Gatsby. [Take a peek!](https://kvlly.com/shop/)
