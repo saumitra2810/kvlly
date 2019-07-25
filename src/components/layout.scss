@@ -137,6 +137,32 @@ ul.disc {
 		margin: 0 0 4px 16px;
 		display: inline-block;
 	}
+	.logo a {
+		margin: 2px 0 0;
+	}
+	.logo img {
+		max-width: 80px;
+		display: block;
+	}
+	@media (max-width: 500px){
+		.logo {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 8px;
+		}
+		.links {
+			margin: 0 auto;
+			a:first-of-type {
+				margin-left: 0;
+			}
+		}
+	}
+	@media (max-width: 360px){
+		.links a {
+			margin: 0 0 4px 10px;
+			font-size: 0.8em;
+		}
+	}
 }
 
 .footer {
@@ -151,6 +177,15 @@ ul.disc {
 		margin-top: 4px;
 		a {
 			color: #ffffff;
+		}
+	}
+	@media (max-width: 500px){
+		.social {
+			margin: 0 auto;
+			text-align: center;
+			li:first-of-type {
+				margin-left: 0;
+			}
 		}
 	}
 }
