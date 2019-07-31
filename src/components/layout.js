@@ -57,7 +57,7 @@ class Layout extends React.Component {
           .removeLineItems(checkoutID, [lineItemID])
           .then(res => {
             if (this._isMounted) {
-              console.log(res)
+              // console.log(res)
               this.setState(state => ({
                 store: {
                   ...state.store,
@@ -86,6 +86,16 @@ class Layout extends React.Component {
               }))
             }
           })
+      },
+      updateFilterType: type => {
+        if (this._isMounted) {
+          this.setState(state => ({
+            store: {
+              ...state.store,
+              filteredType: type,
+            },
+          }))
+        }
       },
     },
   }
@@ -145,7 +155,7 @@ class Layout extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     // console.log(prevState.store.checkout.lineItems)
     if (this.state.store.checkout.lineItems.length > 0) {
-      console.log(this.state.store.checkout)
+      // console.log(this.state.store.checkout)
     }
     // console.log(this)
     // console.log(this.state.store.checkout.lineItems)

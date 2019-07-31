@@ -1,60 +1,105 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React, { useState, useEffect, useContext } from 'react'
+import ShopContext from '../components/shopcontext'
+import ProductListing from '../components/productlisting'
+import { graphql } from 'gatsby'
 
 import SEO from '../components/seo'
 
 import '../components/shop.scss'
 
-const Shop = props => (
-  <>
-    <SEO
-      title="Shop | Kelly Vaughn"
-      image="https://kvlly.com/images/donut-time.jpg"
-      description="Example Shopify/Gatsby headless commerce setup"
-    />
-    <div className="siteHeader">
-      <h1>Shop &mdash;</h1>
-      <h2>Example Shopify/Gatsby headless commerce setup</h2>
-      <p>
-        This is a real store! If you place an order you will receive what you
-        ordered.
-      </p>
-    </div>
-    <div className="products-holder">
-      {props.data.allShopifyProduct.edges.map((p, i) => {
-        let product = p.node
-        return (
-          <div className="product" key={i}>
-            <Link to={`/shop/${product.handle}`}>
-              <img alt={product.title} src={product.images[0].originalSrc} />
-              <h3>{product.title}</h3>
-              <span>
-                $
-                {parseFloat(product.priceRange.minVariantPrice.amount)
-                  .toFixed(2)
-                  .split('.00')}
-                {product.priceRange.maxVariantPrice.amount >
-                product.priceRange.minVariantPrice.amount
-                  ? ` - $${
-                      parseFloat(product.priceRange.maxVariantPrice.amount)
-                        .toFixed(2)
-                        .split('.00')[0]
-                    }`
-                  : null}
-              </span>
-            </Link>
-          </div>
-        )
-      })}
-    </div>
-  </>
-)
+const Shop = props => {
+  const context = useContext(ShopContext)
+  const [type, setType] = useState(context.filteredType)
+
+  useEffect(() => {
+    context.updateFilterType(type)
+  }, type)
+
+  const productTypes = []
+  const types = []
+  types.push(
+    <option value="all" key="-1">
+      All
+    </option>
+  )
+  props.data.productTypes.edges.map((t, i) => {
+    let type = t.node.name
+    if (!productTypes.includes(type) && type.length > 0) {
+      productTypes.push(type)
+      types.push(
+        <option key={i} value={type}>
+          {type}s
+        </option>
+      )
+    }
+    return null
+  })
+  productTypes.sort()
+
+  return (
+    <>
+      <SEO
+        title="Shop | Kelly Vaughn"
+        image="https://kvlly.com/images/donut-time.jpg"
+        description="Developer merch you didn't know you needed"
+      />
+      <div className="siteHeader products-intro">
+        <h1>Shop &mdash;</h1>
+        <h2>Developer merch you didn't know you needed</h2>
+        <p>
+          I started this shop as a way to learn headless commerce, but it has
+          evolved into its own side business and I love it! Whether you shop on
+          this store or the{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://shop.kvlly.com"
+          >
+            Shopify storefront
+          </a>
+          , all orders will be fulfilled.
+        </p>
+      </div>
+      <div className="products-filter">
+        <label htmlFor="productFilter">Filter by product type: </label>
+        <select
+          id="productFilter"
+          defaultValue={context.filteredType}
+          onChange={e => setType(e.target.value)}
+        >
+          {types}
+        </select>
+      </div>
+      <div className="products-holder">
+        {context.filteredType === 'all'
+          ? props.data.products.edges.map((p, i) => {
+              let product = p.node
+              return (
+                <div className="product" key={i}>
+                  <ProductListing product={product} />
+                </div>
+              )
+            })
+          : props.data.products.edges
+              .filter(p => p.node.productType.includes(context.filteredType))
+              .map((p, i) => {
+                let product = p.node
+                return (
+                  <div className="product" key={i}>
+                    <ProductListing product={product} />
+                  </div>
+                )
+              })}
+      </div>
+    </>
+  )
+}
 
 export default Shop
 
 export const pageQuery = graphql`
   query {
-    allShopifyProduct {
+    products: allShopifyProduct {
       edges {
         node {
           id
@@ -78,6 +123,13 @@ export const pageQuery = graphql`
           images {
             originalSrc
           }
+        }
+      }
+    }
+    productTypes: allShopifyProductType {
+      edges {
+        node {
+          name
         }
       }
     }

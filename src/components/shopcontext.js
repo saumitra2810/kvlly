@@ -12,6 +12,7 @@ export const defaultStoreContext = {
   checkout: { lineItems: [] },
   products: [],
   shop: {},
+  filteredType: 'all',
   addVariantToCart: () => {},
   removeLineItem: () => {},
   updateLineItem: () => {},
