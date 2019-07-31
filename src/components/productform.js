@@ -85,6 +85,41 @@ const ProductForm = props => {
             </button>
           </div>
           <div dangerouslySetInnerHTML={{ __html: product.descriptionHtml }} />
+
+          <div className="shipping-info">
+            <h4>About this product</h4>
+            <p>
+              All products are printed on demand. That means it'll take a little
+              while longer to get your product ready to ship, but it also means
+              each item goes through a QA check to ensure you're getting a
+              quality product. Production generally takes between 2-5 business
+              days. It's worth the wait - promise!
+            </p>
+            <h4>How much does shipping cost?</h4>
+            <p>
+              Here are the shipping rates for everyone. Orders most likely ship
+              to your country. Unless you live in North Korea. In that case,
+              sorry. I don't call the shots.
+            </p>
+            <table>
+              <tr>
+                <td>Order Value</td>
+                <td>Cost</td>
+              </tr>
+              <tr>
+                <td>Up to $10</td>
+                <td>$2 USD</td>
+              </tr>
+              <tr>
+                <td>$10 to $40</td>
+                <td>$6 USD</td>
+              </tr>
+              <tr>
+                <td>Over $40</td>
+                <td>Free</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </>

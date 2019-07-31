@@ -1,12 +1,45 @@
+.products-intro p {
+  line-height: 1.5;
+}
+
+.products-filter {
+  margin: 20px auto 30px;
+  text-align: right;
+  border-top: 1px solid #eaeaea;
+  padding-top: 30px;
+  select {
+    width: 100%;
+    max-width: 200px;
+    -webkit-appearance: none;
+    border: 1px solid #404040;
+    background: transparent;
+    border-radius: 0;
+    padding: 4px 30px 4px 12px;
+    background-image: url('../images/dropdown-arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 18px auto;
+    font-size: 1em;
+    font-family: 'Playfair Display', serif;
+  }
+  @media (max-width: 500px){
+    text-align: center;
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+  }
+}
+
 .products-holder {
+  margin-left: -30px;
   display: flex;
-  flex-wrap: Wrap;
+  flex-wrap: wrap;
   .product {
+    float: left;
+    margin-left: 30px;
    @media (min-width: 801px){
-      width: calc(25% - 24px);
-      &:not(:nth-child(4n)){
-        margin-right: 32px;
-      }
+      width: calc(25% - 30px);
     }
     margin-bottom: 40px;
     img {
@@ -19,10 +52,7 @@
       font-size: 1.1em;
     }
     @media (max-width: 800px){
-      width: calc(50% - 16px);
-      &:not(:nth-child(2n)){
-        margin-right: 32px;
-      }
+      width: calc(50% - 30px);
     }
   }
 }
@@ -132,6 +162,14 @@
       outline: none;
       border: 1px solid purple;
     }
+  }
+
+  h4 {
+    font-family: 'Playfair Display', serif;
+    color: #202020;
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 8px;
   }
 
   table {

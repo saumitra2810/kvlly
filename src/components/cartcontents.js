@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import ShopContext from './shopcontext'
 import LineItem from './lineitem'
-import Link from 'gatsby'
 
 const CartContents = () => {
   const context = useContext(ShopContext)
