@@ -22,8 +22,8 @@ const Shop = props => {
       All
     </option>
   )
-  props.data.productTypes.edges.map((t, i) => {
-    let type = t.node.name
+  props.data.products.edges.map((t, i) => {
+    let type = t.node.productType
     if (!productTypes.includes(type) && type.length > 0) {
       productTypes.push(type)
       types.push(
@@ -123,13 +123,6 @@ export const pageQuery = graphql`
           images {
             originalSrc
           }
-        }
-      }
-    }
-    productTypes: allShopifyProductType {
-      edges {
-        node {
-          name
         }
       }
     }
