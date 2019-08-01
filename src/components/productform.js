@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'gatsby'
 
 import ShopContext from './shopcontext'
@@ -11,11 +11,12 @@ const ProductForm = props => {
   const hasVariants = product.variants.length > 1
   const context = useContext(ShopContext)
   let productVariant =
-    context.client.product.helpers.variantForOptions(product, variant) ||
+    context.client.product.helpers.variantForOptions(props.product, variant) ||
     variant
 
   const handleOptionChange = event => {
     const { target } = event
+    console.log(target.value)
     setVariant(prevState => ({
       ...prevState,
       [target.name]: target.value,
@@ -26,7 +27,15 @@ const ProductForm = props => {
     setQuantity(event.target.value)
   }
 
-  // useEffect(() => console.log({ variant }), [variant])
+  useEffect(() => console.log({ variant }), [variant])
+
+  useEffect(() => {
+    let defaultOptionValues = {}
+    props.product.options.forEach(selector => {
+      defaultOptionValues[selector.name] = selector.values[0]
+    })
+    setVariant(defaultOptionValues)
+  }, [])
 
   // Do variants exist? If so, create the selectors
   const variantSelectors = hasVariants
