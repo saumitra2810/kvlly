@@ -120,11 +120,11 @@ const ProductForm = props => {
                 <td>$2 USD</td>
               </tr>
               <tr>
-                <td>$10 to $40</td>
+                <td>$10 to $50</td>
                 <td>$6 USD</td>
               </tr>
               <tr>
-                <td>Over $40</td>
+                <td>Over $50</td>
                 <td>Free</td>
               </tr>
             </table>
