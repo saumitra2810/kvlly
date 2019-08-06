@@ -106,28 +106,11 @@ const ProductForm = props => {
             </p>
             <h4>How much does shipping cost?</h4>
             <p>
-              Here are the shipping rates for everyone. Orders most likely ship
-              to your country. Unless you live in North Korea. In that case,
-              sorry. I don't call the shots.
+              Shipping rates are based on the number and type of items in your
+              order, as well as where you live. Thankfully they're all
+              reasonable! Orders most likely ship to your country. Unless you
+              live in North Korea. In that case, sorry. I don't call the shots.
             </p>
-            <table>
-              <tr>
-                <td>Order Value</td>
-                <td>Cost</td>
-              </tr>
-              <tr>
-                <td>Up to $10</td>
-                <td>$2 USD</td>
-              </tr>
-              <tr>
-                <td>$10 to $40</td>
-                <td>$6 USD</td>
-              </tr>
-              <tr>
-                <td>Over $40</td>
-                <td>Free</td>
-              </tr>
-            </table>
           </div>
         </div>
       </div>
