@@ -5,6 +5,7 @@ import ShopContext, { defaultStoreContext } from './shopcontext'
 
 import Header from './header'
 import Footer from './footer'
+import SwymSnippet from './swymsnippet';
 import './layout.scss'
 import './shop.scss'
 
@@ -188,6 +189,7 @@ class Layout extends React.Component {
               >
                 {children}
               </div>
+              <SwymSnippet />
               <Footer />
             </>
           )}
